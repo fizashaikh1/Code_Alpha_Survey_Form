@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey_Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+       <h1 id="title" class="text-center">Survey Form For internship</h1>
+       <p class="description-text-center" id="description">Fill this Form.</p>
+        </header>
+    <div class="container">
+     
+     <form action="" id="survey_form">
+        <div> 
+            <p class="name">Name</p>
+        <input type="text" name="name" id="radio" class="formcontrol" placeholder="Enter your name" required></div>
+        <div>
+            <p class="name">Email</p>
+        <input type="email" name="email" id="radio" class="formcontrol" placeholder="Enter your email" required></div>
+        <div> 
+          <p class="name">Mobile number</p>
+            <input type="number" name="phone" id="radio" class="formcontrol" placeholder="Enter your number" required></div>
+            <div>
+                <p class="name">Age</p>
+            <input type="text" name="address" id="radio" class="formcontrol" placeholder="Enter your address" required>
+        </div> <br />
+            <div class="form">
+                <label for="year">Choose curent year of study?</label> <br />
+                <select id="dropdown" class="formcontrol" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+
+
+                </select>
+            </div>
+            <div>
+                <p class="name">How you come to know about this internship?</p>
+                <p>
+                    <input type="radio" class="inputradio" name="source" value="Friends">
+                    Frontend_dev
+                </p>
+                <p>
+                    <input type="radio" class="inputradio" name="source" value="Social_media">
+                    Backend_dev
+                </p>
+                <p> <input type="radio" class="inputradio" name="source" value="News_paper">
+                    Fullstack_dev</p>
+                  
+            </div>
+            <div class="labels">
+                <label for="perference">What would you like to include in your coming syllabus (select multiple if you want)</label>
+               <li class="checkbox"> <label for="">
+                <input type="checkbox" name="perfer" class="checkbox" value="frontend_dev">
+                Mern Stack Development
+            </label></li>
+               <li class="checkbox"> <label for="">
+                <input type="checkbox" name="perfer" class="checkbox" value="backend_dev">
+                Mobile App Development
+            </label></li>
+                <li class="checkbox"><label for="">
+                    <input type="checkbox" name="perfer" class="checkbox" value="fullstack_dev">
+                  Object Oriented Programming
+                </label></li>
+            </div>
+            <div class="form-group">
+                <p>  Any Comments or Suggestions?
+                </p>
+                <textarea name="comments" id="comments" cols="30" rows="5" class="textarea" placeholder="comment..">
+                </textarea>
+            </div> <br />
+            <button  id="btn" type="submit">Submit</button>
+            </form>
+    </div> 
+    
+
+    
+</body>
+</html>
